@@ -1,0 +1,661 @@
+{
+  "intents": [
+    {
+      "intent": "enquiry",
+      "examples": [
+        {
+          "text": "can i get a menu?"
+        },
+        {
+          "text": "steep"
+        },
+        {
+          "text": "what are the offers available?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "hire",
+      "examples": [
+        {
+          "text": "please hire"
+        },
+        {
+          "text": "apply for job"
+        },
+        {
+          "text": "Take hiring for us"
+        },
+        {
+          "text": "hire"
+        },
+        {
+          "text": "okay"
+        },
+        {
+          "text": "fine"
+        },
+        {
+          "text": "research"
+        },
+        {
+          "text": "i want to hire"
+        },
+        {
+          "text": "marketing"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hello"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "aa",
+      "examples": [
+        {
+          "text": "aa"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "generalQ",
+      "examples": [
+        {
+          "text": "I have graduated in"
+        },
+        {
+          "text": "passion, interest, standard ,development"
+        },
+        {
+          "text": "passion"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sudeep",
+      "examples": [
+        {
+          "text": "hi"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "jobs",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Accounting and finance",
+          "synonyms": [
+            "accountant",
+            "manager",
+            "executive"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "development",
+          "synonyms": [
+            "senior developer",
+            "junior developer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Marketing",
+          "synonyms": [
+            "junior executive",
+            "senior executive"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Accounting",
+          "synonyms": [
+            "accountant",
+            "manager",
+            "executive"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Research and development",
+          "synonyms": [
+            "senior developer",
+            "junior developer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "research",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "testing",
+          "synonyms": [
+            "junior testing engineer",
+            "senior testing engineer"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "offers",
+          "synonyms": []
+        },
+        {
+          "type": "patterns",
+          "value": "Can you introduce yourself?",
+          "patterns": []
+        },
+        {
+          "type": "synonyms",
+          "value": "menu",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "aa",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "aa",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "hire",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "okay",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fine",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "hire",
+          "synonyms": [
+            "hire",
+            "hiring",
+            "recruiting",
+            "incur",
+            "recruitment",
+            "recruit"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "i want to hire",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "generalQ",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Im",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "i am graduated",
+          "synonyms": [
+            "graduated",
+            "graduating",
+            "diploma",
+            "majored",
+            "matriculated",
+            "attended",
+            "enrolled",
+            "laude",
+            "studied",
+            "bachelor",
+            "valedictorian"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "passion",
+          "synonyms": [
+            "What do you know about our company and what role will you play?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Im graduated in",
+          "synonyms": [
+            "What fuels your competitive drive at work?"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "hello",
+          "synonyms": [
+            "Hello,Good morning,take your seat,can you introduce yourself?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good morning",
+          "synonyms": [
+            "Hi,Good morning,take your seat,how can i help you?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "Hi,Good morning,take your seat,can you introduce yourself?"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your job for @item of @sys-number emplyees is ordered successfully."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1591042948295",
+      "conditions": "@jobs && @sys-number",
+      "dialog_node": "response_4_1591043204024",
+      "previous_sibling": "slot_6_1591044173785"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "your job for $item of  @sys-number employees is ordered successfully."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1591042948295",
+      "conditions": "@sys-number && $item",
+      "dialog_node": "response_6_1591044561424",
+      "previous_sibling": "response_6_1591044233964"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your job for @item  of  $number employees is ordered successfully. Thank you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1591042948295",
+      "conditions": "@jobs && $number",
+      "dialog_node": "response_6_1591044233964",
+      "previous_sibling": "response_4_1591043204024"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1591042948295",
+      "variable": "$number",
+      "dialog_node": "slot_6_1591044173785",
+      "previous_sibling": "slot_8_1591044086278"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1591042948295",
+      "variable": "$item",
+      "dialog_node": "slot_8_1591044086278"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "please mention the number of employees required."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1591044173785",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1591044173792",
+      "previous_sibling": "handler_7_1591044173792"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1591044173785",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_7_1591044173792"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What do you know about our company and what role will you play?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592675100933",
+      "conditions": "@generalQ:passion",
+      "dialog_node": "response_4_1592678101121",
+      "previous_sibling": "response_7_1592676305356"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. What fuels your competitive drive at work?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592675100933",
+      "conditions": "@generalQ:Im graduated in",
+      "dialog_node": "response_7_1592676305356"
+    },
+    {
+      "type": "standard",
+      "title": "customer name",
+      "parent": "Welcome",
+      "conditions": "",
+      "dialog_node": "node_9_1591045360257"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. Good afternoon.  can you please type \"hire\" to obtain the profiles of the candidates"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1590769682788",
+      "conditions": "now().after('12:00:00') && now().before('16:59:59')",
+      "dialog_node": "response_8_1590770103203",
+      "previous_sibling": "response_4_1590769725826"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. can you please type \"hire\" to obtain the profiles of the candidates."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1590769682788",
+      "dialog_node": "response_10_1594323947458",
+      "previous_sibling": "response_7_1592676020524"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. Good morning.  can you please type \"hire\" to obtain the profiles of the candidates."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1590769682788",
+      "conditions": "now().after('04:00:00') && now().before('11:59:59')",
+      "dialog_node": "response_4_1590769725826",
+      "previous_sibling": "node_6_1592675100933"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. Good evening. can you please type \"hire\" to obtain the profiles of the candidates."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1590769682788",
+      "conditions": "now().after('17:00:00')",
+      "dialog_node": "response_7_1592676020524",
+      "previous_sibling": "response_8_1590770103203"
+    },
+    {
+      "type": "standard",
+      "title": "General questionsi ",
+      "parent": "node_8_1590769682788",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#generalQ || @generalQ",
+      "dialog_node": "node_6_1592675100933"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "what designation do you want to apply for?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1591044086278",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1591044086327",
+      "previous_sibling": "handler_3_1591044086327"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1591044086278",
+      "context": {
+        "item": "@jobs"
+      },
+      "conditions": "@jobs",
+      "event_name": "input",
+      "dialog_node": "handler_3_1591044086327"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1591042948295",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "#Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greeting || @Greetings",
+      "dialog_node": "node_8_1590769682788",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Hire",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#hire || @hire",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1591042948295",
+      "previous_sibling": "node_8_1590769682788"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, I'm Anton the artificial intelligence recruiting system. I will be providing you the profiles of the candidates for the interview or for you to hire."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#aa || @aa",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
